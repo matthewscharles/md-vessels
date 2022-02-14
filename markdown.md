@@ -7,4 +7,8 @@
 - #speaker .output
 
 # Additional items
-[ ] checkbox (github only?)
+[ ] checkbox (github only)
+
+<script>
+    console.log(document.querySelectorAll('li'))
+</script>

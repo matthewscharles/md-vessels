@@ -1,9 +1,3 @@
 # md-vessels
-sketching out an adapted version of last year's web-based coding
-
-let's test a couple of things first:
-
-- [ ] checkbox 
-- [x] ticked
-- list
-   - sublist?
+This is a markdown version of patcher notation I have been working on for BtB Arts during our Sound Ideas sessions.
+I needed a way to write out patches quickly on the fly.
