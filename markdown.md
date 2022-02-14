@@ -12,16 +12,18 @@
 [ ] checkbox (github only)
 
 <script>
-    // let items = [];
-    // console.log(document.querySelectorAll('li'));
+    function run(){
+    document.getElementById('patcher').innerHTML = ''
+    document.querySelectorAll('li').forEach((x,i)=>{
+            x.setAttribute('class','red');
 
-    // document.querySelectorAll('li').forEach((x)=>{
-    //     x.setAttribute('class','red');
-    //     // console.log(x.style.className)
-    //     console.log(x.children.length)
-    //     // if(x.children.length>0)console.log((x.children).querySelector('ul'))
-    //     if(x.innerHTML.split('<ul>').length>1)console.log(x.innerHTML.split('<ul>')[1].split('</ul>')[0])
-    //     let listItem =  patcher.appendChild(document.createElement('button'))
-    //     listItem.innerHTML = x.innerHTML
-    // })
+            console.log(x.children.length)
+            if(x.children.length>0)console.log(Array.from(x.children).filter(item=>item.tagName == 'ul'))
+            if(x.innerHTML.split('<ul>').length>1)console.log(x.innerHTML.split('<ul>')[1].split('</ul>')[0])
+            let listItem =  patcher.appendChild(document.createElement('button'));
+            listItem.innerHTML = x.innerHTML;
+            listItem.id = `item${i}`
+        })
+    }
+
 </script>
