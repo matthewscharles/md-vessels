@@ -76,4 +76,4 @@ Should be flexible with spaces around the colons, longer term..
     }
     run();
 </script>
-<script src=vessels.js></script>
+<script src="./vessels.js"></script>
