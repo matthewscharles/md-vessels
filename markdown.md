@@ -1,18 +1,64 @@
 <p id='patcher'></p>
 
-# HTML / pug style:
-The # sign followed by the name of the object
-The . sign followed by the class of object
+Rough notes (CM), trying to get together a spec, so these are not very accessible as instructions.
 
-- #osc .Oscillator = frequency:100, type:sawtooth
+# Shorthand version
+This borrows from HTML-style notation for id and class -- I was initially working on this in Pug
+Bullet point per item is optional, but we can use these to group objects together (i.e. left-most outlets automatically connected within a ul group)
 
-# New style
+- Object: the # sign followed by the name of the object
+- Class . sign followed by the class of object
+
+Spaces optional.
+
+An optional hyphen or equals sign marks the end of the object name/class. 
+This helps pace the screenreader output as well as giving a visual marker.
+(nb I originally used > especially since this implies some sort of arrow/allocation, but this reads as 'greater than')
+
+Arguments/attributes follow.
+Optional comma between attributes for visual separation/screen reader pause.
+
+## Example
+Same oscillator object -- first is spaced for screenreader and visual ease, second is the way I usually type my objects out in Pug.
+- #osc .Oscillator - frequency:100, type:sawtooth
+- #osc.Oscillator frequency:100 type:sawtooth
+
+# Longhand version
+This version also adds a connection written directly into the object notation.  I would prefer GitHub's nested blockquotes for this to be honest, since the bullet points don't read out nicely in VoiceOver.
+- Object: here instead of # we write name followed by colon and the name of the object
+- Class
+
+## Example
 - name:filter1, type:Filter - frequency:100, resonance:1
   - audio - speaker
-- #speaker .output
+- name:speaker class:output
 
-# Additional items
-[ ] checkbox (github only)
+# More alternatives
+We could search for the hyphen, to make sure there's a split between object name/class and attributes, and miss out the first # like so:
+- filter1.Filter - frequency:100, resonance:1
+
+
+Is it more confusing to have multiple options this way? It feels natural to me (e.g. missing out semicolon at end of line, syntactic sugar in JS like the conditional operator)
+
+What about CoffeeScript/Python style notation? Since this fits with the typical objects (e.g. Tone):
+
+filter1:
+    class:filter
+    type:lowpass
+    frequency:100
+
+Too longwinded for me.
+
+Another alternative: use a tag name instead of class:
+Filter#filter1 - type:lowpass, frequency:100
+
+Or..use tag name to differentiate objects, gui, and cable.  We could set up custom tag names to make these valid HTML elements down the line if need be..
+
+# Other notes
+Should be flexible with spaces around the colons, longer term..
+
+
+
 
 <script>
     var output = {};
