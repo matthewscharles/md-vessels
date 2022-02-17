@@ -61,8 +61,10 @@ Testing abbreviated version first:
 </div>
 
 .beginPatch
+
 - #osc .Oscillator - frequency:100, type:sawtooth
 - #osc.Oscillator frequency:100 type:sawtooth
+
 .endPatch
 
 <div id='patcher'></div>
