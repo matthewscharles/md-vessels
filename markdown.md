@@ -56,9 +56,11 @@ Should be flexible with spaces around the colons, longer term..
 
 # Patcher test space
 Testing abbreviated version first:
-<div id="source"></div>
+<div id="source">
 - #osc .Oscillator - frequency:100, type:sawtooth
 - #osc.Oscillator frequency:100 type:sawtooth
+</div>
+
 <div id='patcher'></div>
 <div id='object'></div>
 
@@ -79,7 +81,7 @@ Testing abbreviated version first:
             listItem.innerHTML = x.innerHTML;
             listItem.id = `item${i}`
         })
-        document.getElementById('object').innerHTML += Vessels.parseObject('#osc.Oscillator frequency:100 type:sawtooth');
+        document.getElementById('object').innerHTML += Vessels.parseObject('#osc.Oscillator frequency:100 type:sawtooth').toString();
     }
     run();
 </script>
