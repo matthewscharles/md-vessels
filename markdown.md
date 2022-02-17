@@ -57,9 +57,13 @@ Should be flexible with spaces around the colons, longer term..
 # Patcher test space
 Testing abbreviated version first:
 <div id="source">
+
+</div>
+
+.beginPatch
 - #osc .Oscillator - frequency:100, type:sawtooth
 - #osc.Oscillator frequency:100 type:sawtooth
-</div>
+.endPatch
 
 <div id='patcher'></div>
 <div id='object'></div>
