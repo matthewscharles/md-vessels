@@ -56,7 +56,7 @@ Should be flexible with spaces around the colons, longer term..
 
 # Patcher test space
 Testing abbreviated version first:
-<div id="source">
+<div id="source" style='background-color:beige;'>
 
 </div>
 
@@ -68,7 +68,7 @@ Testing abbreviated version first:
 .endPatch
 
 <div id='patcher'></div>
-<div id='object'></div>
+<code id='object'></code>
 
 
 <script src="./vessels.js"></script>
@@ -76,6 +76,7 @@ Testing abbreviated version first:
     var output = {};
 
     function run(){
+        document.getElementById('source').innerHTML = document.body.innerHTML.substring(document.body.innerHTML.indexOf('.beginPatch') + 11,document.body.innerHTML.indexOf('.endPatch'));
         document.getElementById('patcher').innerHTML = '';
         document.getElementById('source').querySelectorAll('li').forEach((x,i)=>{
             x.setAttribute('class','red');
