@@ -55,15 +55,21 @@ or
 Should be flexible with spaces around the colons, longer term..
 
 # Patcher test space
-
+Testing abbreviated version first:
+<div id="source"></div>
+- #osc .Oscillator - frequency:100, type:sawtooth
+- #osc.Oscillator frequency:100 type:sawtooth
 <div id='patcher'></div>
+<div id='object'></div>
 
+
+<script src="./vessels.js"></script>
 <script>
     var output = {};
 
     function run(){
         document.getElementById('patcher').innerHTML = '';
-        document.querySelectorAll('li').forEach((x,i)=>{
+        document.getElementById('source').querySelectorAll('li').forEach((x,i)=>{
             x.setAttribute('class','red');
             x.id = `original${i}`
             console.log(x.children.length)
@@ -73,7 +79,7 @@ Should be flexible with spaces around the colons, longer term..
             listItem.innerHTML = x.innerHTML;
             listItem.id = `item${i}`
         })
+        document.getElementById('object').innerHTML += Vessels.parseObject('#osc.Oscillator frequency:100 type:sawtooth');
     }
     run();
 </script>
-<script src="./vessels.js"></script>

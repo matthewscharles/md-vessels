@@ -1,5 +1,8 @@
 # Charles's studio config example
 
+This is an example developed in session with Jason. We were comparing my proposed syntax with a table. 
+I think the table might still be useful, but it was surprisingly difficult to write out in md on the fly.
+
 There are two channels with a total of six objects on screen.
 
 - Synth loop
