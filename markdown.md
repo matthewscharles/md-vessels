@@ -1,4 +1,4 @@
-# About this document
+# Markdown notation specifications
 
 Rough notes (CM), trying to get together a spec, so these are not very accessible as instructions.
 
