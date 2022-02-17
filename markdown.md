@@ -1,4 +1,4 @@
-<p id='patcher'></p>
+# About this document
 
 Rough notes (CM), trying to get together a spec, so these are not very accessible as instructions.
 
@@ -77,8 +77,9 @@ Or..use tag name to differentiate objects, gui, and cable.  We could set up cust
 # Other notes
 Should be flexible with spaces around the colons, longer term..
 
+# Patcher test space
 
-
+<div id='patcher'></div>
 
 <script>
     var output = {};
