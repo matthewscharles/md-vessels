@@ -15,8 +15,8 @@
             if(x.innerHTML.split('<ul>').length>1)console.log(x.innerHTML.split('<ul>')[1].split('</ul>')[0])
             let listItem =  patcher.appendChild(document.createElement('button'));
             listItem.innerHTML = x.innerHTML;
-            console.log(Vessels.parseObject(x.innerHTML));
+            console.log(JSON.stringify(Vessels.parseObject(x.innerHTML)));
             listItem.id = `item${i}`
         })
-        document.getElementById('object').innerHTML += Vessels.parseObject('#osc.Oscillator frequency:100 type:sawtooth').toString();
+        document.getElementById('object').innerHTML += JSON.stringify(Vessels.parseObject('#osc.Oscillator frequency:100 type:sawtooth'));
     }
