@@ -1,7 +1,11 @@
  var output = {};
 
+    function getPatch(element, start='.beginPatch', end='.endPatch'){
+        return element.substring(element.indexOf(start) + start.length,element.indexOf(end));
+    }
+
     function run(){
-        document.getElementById('source').innerHTML = document.body.innerHTML.substring(document.body.innerHTML.indexOf('.beginPatch') + 11,document.body.innerHTML.indexOf('.endPatch'));
+        document.getElementById('source').innerHTML = getPatch(document.body.innerHTML);
         document.getElementById('patcher').innerHTML = '';
         document.getElementById('source').querySelectorAll('li').forEach((x,i)=>{
             x.setAttribute('class','red');
