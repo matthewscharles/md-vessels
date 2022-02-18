@@ -1,0 +1,26 @@
+#obj{
+    background-color:rgba(200,0,0,50);
+    width:50%;
+    opacity:0.5;
+}
+
+#new{
+    background-color:rgba(255,0,255,50);
+    width:75%;
+    height:50vh;
+}
+.level2{
+    margin-left:2em;
+}
+.level3{
+    margin-left:4m;
+}
+
+.detail{
+    cellspacing:0.5em;
+    border:1px solid;
+    border-collapse : seperate;
+    padding:0.5em;
+/*     margin:0.25em; */
+    background-color:beige;
+}
