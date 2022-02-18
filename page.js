@@ -18,7 +18,7 @@
 
             let listItem =  patcher.appendChild(document.createElement('code'));
             let newObject = Vessels.parseObject(x.innerHTML);
-            console.log(newObject.id)
+            // console.log(newObject.id)
             listItem.innerHTML = JSON.stringify(newObject);
             listItem.id = `item${i}`
             output[newObject.id] = newObject;

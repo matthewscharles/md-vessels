@@ -51,9 +51,6 @@ or
 
 - osc1:audio to filter1:audio
 
-# Notes
-Should be flexible with spaces around the colons, longer term..
-
 # Patcher test space
 Testing abbreviated version first:
 <div id="source" style='background-color:beige;'>

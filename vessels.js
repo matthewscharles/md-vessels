@@ -43,7 +43,12 @@ const Vessels = {
                 outputArray[i] = `${outputArray[i-1]}:${outputArray[i+1]}`;
                 outputArray[i-1]='';
                 outputArray[i+1]='';
-            };
+            } else if (x[x.length-1]==':'){
+                // if space after colon
+                // do we need to consider two spaces?
+                outputArray[i] = `${x}${outputArray[i+1]}`;
+                outputArray[i+1]='';
+            }
           
         })
         outputArray = outputArray.filter(x=>x!=`#${output.id}` && x != `.${output.class}`);
@@ -59,5 +64,9 @@ const Vessels = {
         return output;
     }
 }
+
+console.log(Vessels.parseObject(testInput))
+
+testInput = '#afilter1 .Filter, cutoff: 300hz, resonance:1'
 
 console.log(Vessels.parseObject(testInput))
