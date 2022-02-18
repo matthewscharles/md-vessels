@@ -69,6 +69,8 @@ exampleObject.connections.forEach(([from,to])=>{
     connectionObject.row = document.createElement('tr');
     connectionObject.from = document.createElement('td');
     connectionObject.to = document.createElement('td');
+    connectionObject.from.role='gridcell';
+    connectionObject.to.role='gridcell';
     // [tdIndex,tdValue].forEach(x=>x.className = 'detail')
     connectionObject.from.innerHTML = from;
     connectionObject.to.innerHTML = to;
@@ -83,7 +85,9 @@ Object.entries(exampleObject.attributes).forEach(([name,value])=>{
     let connectionObject = {};
     connectionObject.row = document.createElement('tr');
     connectionObject.name = document.createElement('td');
+    connectionObject.name.role='gridcell';
     connectionObject.value = document.createElement('td');
+    connectionObject.value.role='gridcell';
     // [tdIndex,tdValue].forEach(x=>x.className = 'detail')
     connectionObject.name.innerHTML = name;
     connectionObject.value.innerHTML = value;
