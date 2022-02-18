@@ -11,6 +11,8 @@ We're expecting multiple ports per object. For example, an oscillator output cou
 Is it more confusing to have multiple options this way? It feels natural to me (e.g. missing out semicolon at end of line, syntactic sugar in JS like the conditional operator)
 
 ## Dictionary style
+Why not accept information formatted for Javascript? i.e. maintaining curly brackets..
+
 What about CoffeeScript/Python style notation? Since this fits with the typical objects (e.g. Tone):
 
 filter1:

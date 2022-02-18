@@ -2,6 +2,14 @@
     <summary>
         id and class   
     </summary>
-    attributes
-    connections
+    <details>
+        <summary>
+            attributes
+        </summary>
+    </details>
+    <details>
+        <summary>
+            connections
+        </summary>
+    </details>
 </details>
