@@ -21,11 +21,23 @@ body{
 }
 
 .detail{
-    cellspacing:0.5em;
     border:1px solid;
     border-collapse : seperate;
     padding:0.5em;
-/*     margin:0.25em; */
     background-color:beige;
     text-align:left;
 }
+
+td, th{
+    border:1px solid;
+    border-collapse : seperate;
+    padding:0.5em;
+    background-color:beige;
+    text-align:left;
+}
+
+.objectName{
+    font-weight:bold;
+    font-size:2rem;
+}
+
