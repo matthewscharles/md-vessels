@@ -1,3 +1,7 @@
+body{
+    font-family:arial;
+}
+
 #obj{
     background-color:rgba(200,0,0,50);
     width:50%;
@@ -5,7 +9,7 @@
 }
 
 #new{
-    background-color:rgba(255,0,255,50);
+    background-color:lightgrey;
     width:75%;
     height:50vh;
 }
@@ -23,4 +27,5 @@
     padding:0.5em;
 /*     margin:0.25em; */
     background-color:beige;
+    text-align:left;
 }
