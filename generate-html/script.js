@@ -13,6 +13,16 @@ let object = {"osc":{
 let exampleId = "osc"
 let exampleObject = object[exampleId];
 
+class ObjectHTML{
+    constructor(id, object){
+
+    }
+
+    init(){
+        
+    }
+}
+
 let htmlElement = {
     name:exampleObject.id,
     details:document.createElement('details'),  
