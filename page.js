@@ -15,7 +15,7 @@ function run(){
         x.setAttribute('class','red');
         x.id = `original${i}`;
 
-        console.log(x.children.length)
+        if(window.verbose) console.log(x.children.length)
 
         let listItem =  patcher.appendChild(document.createElement('code'));
         let newObject = Vessels.parseObject(x.innerHTML);
@@ -33,8 +33,8 @@ function run(){
 // check length of children and apply a separate process, remove from loop
 
 // if(x.children.length>0){
-    // console.log(Array.from(x.children).filter(item=>item.tagName == 'UL'))
+    // if(window.verbose) console.log(Array.from(x.children).filter(item=>item.tagName == 'UL'))
 // }
 // if(x.innerHTML.split('<ul>').length>1){
-//     console.log(x.innerHTML.split('<ul>')[1].split('</ul>')[0])
+//     if(window.verbose) console.log(x.innerHTML.split('<ul>')[1].split('</ul>')[0])
 // }
