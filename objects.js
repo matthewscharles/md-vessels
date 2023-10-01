@@ -35,7 +35,6 @@ const Late = {
 
 //------------------------------------------------
 
-
 class NumberFloat{
     constructor(modifier=0){
         this.targets = [];
@@ -44,11 +43,11 @@ class NumberFloat{
         this.trigger = function(){
             this.update();
         }
-        console.log(this.modifier)
+        if(window.verbose) console.log(this.modifier)
     }
     connect(target, inlet=0){
-        console.log(this.targets, '🟠 connecting to ', [target, inlet])
-        console.log(this.targets.includes([target,inlet]))
+        if(window.verbose) console.log(this.targets, '🟠 connecting to ', [target, inlet])
+        if(window.verbose) console.log(this.targets.includes([target,inlet]))
         const even = (element) => element[0] == target && element[1] == inlet;
         if(!(this.targets.some(even)))this.targets.push([target, inlet])
     }
@@ -98,7 +97,7 @@ class NumberFloat{
 class NumberRandom extends NumberFloat{
     update(msg = false){        
         this.value = Math.random() * this.modifier;
-        console.log(this.value);
+        if(window.verbose) console.log(this.value);
         this.bang();
     }
 }
