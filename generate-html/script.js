@@ -23,7 +23,7 @@ class ObjectHTML{
     }
 }
 
-// 
+// rough prototyping code
 let htmlElement = {
     name:exampleObject.id,
     details:document.createElement('details'),  
@@ -119,4 +119,12 @@ htmlElement.attributes.details.appendChild(htmlElement.attributes.summary)
 htmlElement.connections.details.appendChild(htmlElement.connections.summary)
 
 htmlElement.details.appendChild(htmlElement.summary)
-document.getElementById('new').appendChild(htmlElement.details);
+document.getElementById('input').innerHTML =
+    JSON.stringify(exampleObject)
+        .replace(/,/g,',<br>')
+        .replace(/{/g,'{<br>')
+        .replace(/}/g,'<br>}')
+        .replace(/:/g,': ')
+        
+           
+document.getElementById('output').appendChild(htmlElement.details);
