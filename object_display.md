@@ -22,7 +22,6 @@
         <summary>
            2 attributes
         </summary>
-        
         name:item
         name:item
     </details>
@@ -30,7 +29,6 @@
         <summary>
             connections
         </summary>
-        
         source:target
         source:target
     </details>

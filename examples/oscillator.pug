@@ -1,0 +1,27 @@
+body
+    h1 Pug example: oscillator
+    button#starter(onclick='Tone.start()') START AUDIO
+    div#canv(style='display:none;')
+    
+    div#canv
+        div#fx  
+
+    svg#gui(viewbox='0,0,800,500' width='800' role='figure' aria-label='patch')
+        g#cables
+        g#objects
+    
+    div#patch
+        #row1 
+            p#saw.o.Oscillator.x0y0 frequency:A2 volume:0.8 type:sawtooth
+            //- p#saw2.o.Oscillator.x100y0 frequency:C3 volume:0.2 type:sawtooth
+        #row2 
+            //- p#env.o.AmplitudeEnvelope.x0y100
+        #row3
+            p#output.o.Channel.x0y200   
+
+        #connections 
+            .connect saw output
+            .connect env output
+            //- .connect saw2 output
+    
+        i#vol.control value:0 min:0 max:127 low:0 high:1 ramp:0 target:saw-volume

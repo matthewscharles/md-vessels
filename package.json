@@ -1,0 +1,30 @@
+{
+  "name": "md-vessels",
+  "version": "1.0.0",
+  "description": "This is a markdown version of patcher notation I have been working on, mostly for BtB Arts during our Sound Ideas sessions. I needed a way to write out patches quickly on the fly, and having used it successfully for a few months, this is an attempt to formalise it. The idea here is to develop a framework that can translate well into a screen reader compatible layout and be navigated by keyboard or other input devices, with or without a screen reader.",
+  "main": "objects.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matthewscharles/md-vessels.git"
+  },
+  "author": "Charles Matthews",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/matthewscharles/md-vessels/issues"
+  },
+  "homepage": "https://github.com/matthewscharles/md-vessels#readme",
+  "devDependencies": {
+    "pug": "^3.0.2"
+  },
+  "dependencies": {
+    "tone": "^14.7.77",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  }
+}

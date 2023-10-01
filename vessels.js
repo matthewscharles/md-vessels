@@ -2,15 +2,13 @@
 let testInput = '#afilter1 .Filter, cutoff : 100hz, resonance:1'
 // testInput = '#filter1.Filter, cutoff : 100hz, resonance:1'
 
-
-
 const Vessels = {
     matchMark(str, mark, other){
         let matcher = str.find(x=>x.includes(mark))
         if(typeof matcher != 'undefined'){
             if(matcher.includes(mark)) {
-                matcher=matcher.replace(mark, ` ${mark}`);
-                matcher=matcher.replace(other, ` ${other}`);
+                matcher = matcher.replace(mark, ` ${mark}`);
+                matcher = matcher.replace(other, ` ${other}`);
                 let spaced = matcher.split(' ');
                 return spaced.filter(x=>x.includes(mark))[0].replace(mark,'')
             } else {

@@ -25,6 +25,7 @@ Same oscillator object -- first is spaced for screenreader and visual ease, seco
 
 # Longhand version
 This version also adds a connection written directly into the object notation.  I would prefer GitHub's nested blockquotes for this to be honest, since the bullet points don't read out nicely in VoiceOver.
+
 - Object: here instead of # we write name followed by colon and the name of the object
 - Class: as above
 
@@ -53,6 +54,7 @@ or
 
 # Patcher test space
 Testing abbreviated version first:
+
 <div id="source" style='background-color:beige;'>
 
 </div>
@@ -66,7 +68,6 @@ Testing abbreviated version first:
 
 <div id='patcher'></div>
 <code id='object'></code>
-
 
 <script src="./vessels.js"></script>
 <script src="./page.js"></script>
