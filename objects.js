@@ -1,3 +1,8 @@
+/**
+ * @module objects
+ * @description This module contains objects to be used in the patcher.
+ */
+
 const Late = {
     NumberFloat:NumberFloat,
     NumberRandom:NumberRandom,

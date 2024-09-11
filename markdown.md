@@ -87,3 +87,23 @@ Testing abbreviated version first:
     run();
 </script>
 ```
+
+<div id="source" style='background-color:beige;'>
+
+</div>
+
+.beginPatch
+
+- #osc .Oscillator - frequency:100, type:sawtooth
+- #osc.Oscillator frequency:100 type:sawtooth
+
+.endPatch
+
+<div id='patcher'></div>
+<code id='object'></code>
+
+<script src="./vessels.js"></script>
+<script src="./page.js"></script>
+<script>
+    run();
+</script>

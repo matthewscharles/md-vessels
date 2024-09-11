@@ -1,4 +1,4 @@
-# md-vessels
+# MD-Vessels
 This is a markdown version of patcher notation I have been working on, mostly for BtB Arts during our Sound Ideas sessions.
 
 I needed a way to write out patches quickly on the fly, and having used it successfully for a few months, this is an attempt to formalise it.
