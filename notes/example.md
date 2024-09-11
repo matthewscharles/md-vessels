@@ -1,4 +1,4 @@
-# Charles's studio config example
+# Studio config example with Jason Dasent
 
 This is an example developed in session with Jason. We were comparing my proposed syntax with a table as might be used in a screen reader context. 
 
